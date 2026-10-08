@@ -1,0 +1,91 @@
+#palidndrone Number
+number = int(input("Enter a Number"))
+reverse = 0
+original = number
+
+temp = number
+while number >= 0:
+    digit =temp  % 10
+    reverse = reverse * 10 + digit
+    temp = temp // 10
+    print("Palindrone") 
+else: 
+    print("Not a Palindrone")
+
+
+#pattern printing
+num = int(input("enter How many rows"))
+row = " "
+for i in range(1,num+1):
+    row = row + str(i)+ " "
+    print(row)
+
+#Count Vowels
+name = input("Enter the word")
+count = 0
+vowels = "aeiouAEIOU"
+
+for c in name:
+    if c in vowels:
+        count += 1
+        
+print(f"Total number of vowels: {count}")
+
+#Seperate Even and Odd Number 
+number = [1,4,12,15,16,17,6,13,7]
+even =[]
+odd = []
+
+for n in number:
+   if n % 2 == 0:
+     even.append(n)
+   else:
+     odd.append(n)
+
+print(f"even number:{even}")
+print(f"odd number:{odd}")
+
+# Largest Number in a list
+num = [11,23,43,12,76,87]
+largest = num[0]
+lowest = num[0]
+
+for n in num:
+    if n > largest:
+        largest = n
+    if n < lowest:
+        lowest = n
+print(f"largest{largest}")
+print(f"lowest{lowest}")
+
+#Password Strength Checker 
+password = input("Enter a Password")
+
+had_upper = False
+had_lower = False
+had_digit = False
+had_special = False
+
+if len(password)>=8:
+  had_length = True
+else:
+   had_length = False
+
+for c in password:
+  if c.isupper():
+    had_upper = True
+  elif c.islower():
+    had_lower = True
+  elif c.isdigit():
+    had_digit = True
+  elif not c.isalnum():
+    had_special = True
+  else:
+    print("False")
+
+if had_length and had_upper and had_lower and had_digit and had_special:
+  print("Strong Password")
+else:
+  print("Weak")
+    
+
