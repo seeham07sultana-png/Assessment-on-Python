@@ -92,14 +92,109 @@
 registered = {"Asha","Rahul","John","Meera","Ali","Sara"}
 attended = {"Asha","J0hn","Meera","Ali"}
 
-total_reg = 0
-total_attend = 0
+total_reg = len(registered)
+total_attend = len(attended)
+not_attended = registered - attended
+percentage = (total_attend / total_reg)*100
 
-for name in registered:
-    if len(registered)>= 0:
-        total_reg += 1
-    if len(attended)>=0:
-        total_attend += 1
-print("total",total_reg)
-print("attend",total_reg)
+print("total registered",total_reg)
+print("attend",total_attend)
+print("Not Attend",not_attended)
+print("percentage",percentage)
 
+#Product Price Calculator
+product = {"Laptop":55000,"phone":33000,"Headphones":2500,"Keyboard":1500}
+
+name_pro = input("Enter Product:")
+num_quan = input("Enter Quantity:")
+
+for a in product:
+    if a.lower() == name_pro():
+        price = product[a]
+        found = True
+        break
+if found == False:
+    print("Product not found")
+else:
+    suntotal = price * num_quan
+    discount = 0
+
+suntotal = 0
+
+if subtotal >= 30000:
+    discount = subtotal * 10/100
+else:
+    if subtotal >= 10000:
+    discount = subtotal * 5/100
+    else:
+    discount = 0
+
+final_amount = subtotal - discount
+
+print("subtotal",subtotal)
+print("discount",discount)
+print("final amount",final_amount)
+#Product Price Calculator
+product = {"Laptop":55000,"phone":33000,"Headphones":2500,"Keyboard":1500}
+
+name_pro = input("Enter Product:")
+num_quan = input("Enter Quantity:")
+
+for a in product:
+    if a.lower() == name_pro():
+        price = product[a]
+        found = True
+        break
+if found == False:
+    print("Product not found")
+else:
+    suntotal = price * num_quan
+    discount = 0
+
+suntotal = 0
+
+if subtotal >= 30000:
+    discount = subtotal * 10/100
+else:
+    if subtotal >= 10000:
+    discount = subtotal * 5/100
+    else:
+    discount = 0
+
+final_amount = subtotal - discount
+
+print("subtotal",subtotal)
+print("discount",discount)
+print("final amount",final_amount)
+#Product Price Calculator
+product = {"Laptop":55000,"phone":33000,"Headphones":2500,"Keyboard":1500}
+
+name_pro = input("Enter Product:")
+num_quan = input("Enter Quantity:")
+
+for a in product:
+    if a.lower() == name_pro():
+        price = product[a]
+        found = True
+        break
+if found == False:
+    print("Product not found")
+else:
+    suntotal = price * num_quan
+    discount = 0
+
+suntotal = 0
+
+if subtotal >= 30000:
+    discount = subtotal * 10/100
+else:
+    if subtotal >= 10000:
+    discount = subtotal * 5/100
+    else:
+    discount = 0
+
+final_amount = subtotal - discount
+
+print("subtotal",subtotal)
+print("discount",discount)
+print("final amount",final_amount)
